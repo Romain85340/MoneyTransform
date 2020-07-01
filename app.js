@@ -6,8 +6,11 @@ function recupererValeur(){
         url: url,
         type : "GET",
         success: function(res, status, req){
-            console.log("res: ", res.rates.USD);
-            console.log("req: ", req);
+            var rates = res.rates 
+              , fromAmount = document.getElementById("fromAmount").value;
+            var from = document.getElementById("from").value;
+            var to = document.getElementById("to").value;
+            
 
         } // Callback
         
